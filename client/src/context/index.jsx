@@ -13,7 +13,7 @@ const StateContext = createContext();
 
 export const StateContextProvider = ({ children }) => {
   const { contract } = useContract(
-    "0x3Fb0F36059067301D292c24632779287f68E5622"
+    '0x3Fb0F36059067301D292c24632779287f68E5622'
   );
   const { mutateAsync: createCampaign } = useContractWrite(
     contract,

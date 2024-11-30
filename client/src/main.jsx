@@ -10,7 +10,10 @@ import "./index.css";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 //If not working replace Goerli with Sepolia
 root.render(
-  <ThirdwebProvider desiredChainId={ChainId.Goerli}>
+  <ThirdwebProvider
+    activeChain="ethereum"
+    clientId="df6df45d42513d393ee4db1ed9dca030"
+  >
     <Router>
       <StateContextProvider>
         <App />
